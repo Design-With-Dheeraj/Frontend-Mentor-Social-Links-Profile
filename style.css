@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--page-bg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "inter-semi-bold";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "inter-regular";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+
+:root{
+    --page-bg: #141414;
+    --card-bg: #1f1f1f;
+    --theme-color: #cae670;
+    --btn-bg: #333333;
+}
+
+.card-contain{
+    width: 300px;
+    height: auto;
+
+    background-color: var(--card-bg);
+    border-radius: 12px;
+
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.profile-info img{
+    width: 70px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+.profile-info .profile-name{
+    font: 20px "inter-bold";
+    color: #fff;
+
+    margin: 20px 0 6px;
+}
+
+.profile-info .profile-place{
+    font: 12px "inter-semi-bold";
+    color: var(--theme-color);
+}
+
+.profile-sc-link-contain{
+    margin-top: 20px;
+}
+
+.profile-sc-link-contain span{
+    font: 11px "inter-regular";
+    color: #fff;
+}
+
+.profile-sc-link-contain .link-contain{
+    margin-top: 16px;
+}
+
+.link-contain .link{
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 8px;
+    
+    background-color: var(--btn-bg);
+    border-radius: 6px;
+
+    font: 10px "inter-bold";
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.link-contain .link:hover{
+    background-color: var(--theme-color);
+    color: var(--page-bg);
+}
+
+
+.attribution 
+{ 
+    width: 80%;
+
+    font-family: "inter-bold";
+    font-size: 12px; 
+    text-align: center;
+    text-transform: capitalize; 
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.attribution a 
+{ 
+    color: var(--theme-color); 
+}
+
+
+
+
+/* --------- Responsive Design ---------- */
+
+@media screen and (max-width:768px) {
+    
+}
+
